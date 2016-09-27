@@ -12,14 +12,14 @@ You’ll then use that to compute the values for the CSS styles below.
 1. Convert the base font-size listed here from pixels to ems:
 
       html {
-        font-size: 1.1875em; /* 19px in em */
+        font-size: 1.1875em; /* 19px in ems */
       }
 
 2.  Convert the base font-size listed here to ems, and set the line-height in ems accordingly:
 
       html {
-        font-size: 17px;
-        line-height: 24px;
+        font-size: 1.0625; /* 17px in ems */
+        line-height: 0.7083em; /* 24px @ 17px em */
       }
 
 3. Set the padding for this page to 12px on top and bottom, and 6px on left and right. Express in
