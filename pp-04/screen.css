@@ -8,3 +8,32 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
+html {
+  background-color: #323232;
+  color: #ddd;
+  font-size: 1.125em;
+  font-family: serif;
+}
+
+main {
+  line-height: 1.222em;
+  padding: 0.916em 1.222em;
+  color: #aca;
+}
+
+h1 {
+  font-size: 1.406em;
+  padding: 0 0.916em;
+}
+
+h2 {
+  font-size: 1.703em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  list-style: square;
+}
