@@ -15,44 +15,60 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #one {
   color: white;
 }
+
 #three {
   background-color: purple;
 }
+
 #two {
   background-color: green;
 }
+
 #one {
   background-color: red;
 }
 
-
 /* ==== LAYOUT STYLES ==== */
 #content {
-
+  display: flex;
+  flex-flow: wrap;
 }
 
 #three,
 #two,
 #one {
-
+  flex: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
 #three {
-
+  order: 3;
 }
 
 #two {
-
+  order: 2;
 }
 
 #one {
-
+  order: 1;
 }
 
 @media screen and (min-width: 600px) {
-
+  #one,
+  #two {
+    height: 50vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
+  #one,
+  #two,
+  #three {
+    width: 33vw;
+    height: 100vh;
+  }
 }
